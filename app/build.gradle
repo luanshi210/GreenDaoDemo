@@ -35,7 +35,7 @@ greendao{
      */
     targetGenDir 'src/main/java'
     /**
-     * 版本号
+     * 版本号  升级数据库需要 +1
      */
     schemaVersion 1
     /**
