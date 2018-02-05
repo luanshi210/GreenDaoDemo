@@ -27,6 +27,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     compile 'org.greenrobot:greendao:3.2.2' // add library
+    compile 'cube.com.axislibrary:Axislibrary:1.0.0@aar'
 }
 
 greendao{
@@ -37,7 +38,7 @@ greendao{
     /**
      * 版本号  升级数据库需要 +1
      */
-    schemaVersion 1
+    schemaVersion 2
     /**
      * greendao 输出dao数据库操作实体类文件夹
      */
