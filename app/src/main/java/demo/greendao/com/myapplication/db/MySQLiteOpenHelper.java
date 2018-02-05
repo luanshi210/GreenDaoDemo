@@ -8,9 +8,7 @@ import org.greenrobot.greendao.database.Database;
 import greendao.DaoMaster;
 import greendao.UserDao;
 
-/**
- * Created by Growth on 2016/3/3.
- */
+
 public class MySQLiteOpenHelper extends DaoMaster.OpenHelper {
     public MySQLiteOpenHelper(Context context, String name, SQLiteDatabase.CursorFactory factory) {
         super(context, name, factory);
