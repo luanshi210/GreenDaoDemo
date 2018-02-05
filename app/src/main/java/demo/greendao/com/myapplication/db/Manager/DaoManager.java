@@ -1,8 +1,10 @@
-package demo.greendao.com.myapplication.db;
+package demo.greendao.com.myapplication.db.Manager;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
+
 import org.greenrobot.greendao.query.QueryBuilder;
+
 import greendao.DaoMaster;
 import greendao.DaoSession;
 

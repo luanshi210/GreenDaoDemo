@@ -1,8 +1,7 @@
-package demo.greendao.com.myapplication.db;
+package demo.greendao.com.myapplication.db.Manager;
 
 import android.content.Context;
 
-import demo.greendao.com.myapplication.db.Manager.UserManager;
 
 /**
  * Created by zhoujiaqi on 2018/2/5.

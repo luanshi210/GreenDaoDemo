@@ -1,4 +1,4 @@
-package demo.greendao.com.myapplication.db;
+package demo.greendao.com.myapplication.db.Manager;
 
 /**
  * Created by zhoujiaqi on 2018/2/5.
@@ -13,7 +13,6 @@ import greendao.DaoSession;
 
 /**
  * 将所有创建的表格相同的部分封装到这个BaseDao中
- * Created by jamy on 16/6/16.
  */
 public class BaseDao<T>{
     public static final String TAG = BaseDao.class.getSimpleName();

@@ -1,4 +1,4 @@
-package demo.greendao.com.myapplication.db;
+package demo.greendao.com.myapplication.db.Manager;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
