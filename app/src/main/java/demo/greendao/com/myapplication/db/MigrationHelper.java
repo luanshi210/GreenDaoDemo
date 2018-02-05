@@ -26,8 +26,8 @@ import java.util.List;
  */
 public final class MigrationHelper {
 
-    public static boolean DEBUG = false;
-    private static String TAG = "MigrationHelper";
+    public static boolean DEBUG = true;
+    private static String TAG = "MigrationHelper====";
     private static final String SQLITE_MASTER = "sqlite_master";
     private static final String SQLITE_TEMP_MASTER = "sqlite_temp_master";
 
@@ -240,7 +240,7 @@ public final class MigrationHelper {
 
     private static void printLog(String info){
         if(DEBUG){
-            Log.d(TAG, info);
+            Log.e(TAG, info);
         }
     }
 

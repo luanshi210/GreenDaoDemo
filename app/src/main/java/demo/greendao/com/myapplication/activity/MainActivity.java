@@ -4,24 +4,21 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import demo.greendao.com.myapplication.R;
-import demo.greendao.com.myapplication.db.GreenDaoHelper;
+import demo.greendao.com.myapplication.db.DaoCore;
 import demo.greendao.com.myapplication.modle.User;
-import greendao.UserDao;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     private Button addData,deleteData,queryData,updateData;
-    private UserDao mUserDao;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mUserDao = GreenDaoHelper.getDaoSession().getUserDao();
         InitView();
-
+        initEvent();
+        initData();
     }
 
     //控件初始化
@@ -30,9 +27,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         deleteData = findViewById(R.id.deleteData);
         queryData = findViewById(R.id.queryData);
         updateData = findViewById(R.id.updateData);
-        initEvent();
+
     }
 
+    //初始化点击事件
     private void  initEvent(){
         addData.setOnClickListener(this);
         deleteData.setOnClickListener(this);
@@ -40,36 +38,36 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         updateData.setOnClickListener(this);
     }
 
+    //初始化数据
+    private void  initData(){
+        DaoCore.getUserInstance().insertObject(new User(null,(long) 10001,"大乔",23,"female","短笛","晴天"));
+        DaoCore.getUserInstance().insertObject(new User(null,(long) 10002,"小乔",22,"female","琵琶","晴天"));
+        DaoCore.getUserInstance().insertObject(new User(null,(long) 10003,"曹操",30,"male","舞剑","阴天"));
+        DaoCore.getUserInstance().insertObject(new User(null,(long) 10004,"刘备",31,"male","带兵","晴天"));
+        DaoCore.getUserInstance().insertObject(new User(null,(long) 10005,"孙权",32,"male","皇帝","阴天"));
+    }
+
+
     @Override
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.addData:
-                mUserDao.insert(new User(null,10001,"david",23,"male","basketball"));//id传null 即自增。==> 这里是Long类型而不是long
                 break;
             case R.id.deleteData:
-                User user = mUserDao.queryBuilder().where(UserDao.Properties.Id.eq(2)).build().unique();
-                if (user == null) {
-                    Toast.makeText(MainActivity.this,"用户不存在!",Toast.LENGTH_LONG).show();
-                } else {
-                    mUserDao.deleteByKey(user.getId());
-                }
-
-
                 break;
             case R.id.queryData:
-                //User user = mUserDao.queryBuilder().where(UserDao.Properties.Id.eq(3)).build().unique();
                 break;
             case R.id.updateData:
-                user = new User((long) 2, 10002,"meimei", 24, "female","football");
-                mUserDao.update(user);
                 break;
-
              default:
                  break;
         }
     }
 
 
-
-
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        DaoCore.getUserInstance().CloseDataBase();
+    }
 }

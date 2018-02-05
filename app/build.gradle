@@ -38,7 +38,7 @@ greendao{
     /**
      * 版本号  升级数据库需要 +1
      */
-    schemaVersion 2
+    schemaVersion 3
     /**
      * greendao 输出dao数据库操作实体类文件夹
      */

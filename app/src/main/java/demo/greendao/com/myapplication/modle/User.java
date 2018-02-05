@@ -1,8 +1,8 @@
 package demo.greendao.com.myapplication.modle;
 
 import org.greenrobot.greendao.annotation.Entity;
-import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Id;
+import org.greenrobot.greendao.annotation.Generated;
 
 /**
  * Created by zhoujiaqi on 2018/2/2.
@@ -23,39 +23,34 @@ import org.greenrobot.greendao.annotation.Id;
         generateGettersSetters = true
 )
 public class User {
-    // 数据库主键，autoincrement设置自增，只能为 long/ Long 类型
     @Id(autoincrement = true)
     private Long id;
     // 唯一，默认索引。可另定义属性唯一索引设为主键
-    private int userId;
+    private Long userId;
     // 列名，默认使用变量名。默认变化：userName --> USER_NAME
     private String userName;
     private int age;
     private String gender;
     private String hobby;
-@Generated(hash = 1485919077)
-public User(Long id, int userId, String userName, int age, String gender,
-        String hobby) {
+    private String weather;
+@Generated(hash = 1177118064)
+public User(Long id, Long userId, String userName, int age, String gender,
+        String hobby, String weather) {
     this.id = id;
     this.userId = userId;
     this.userName = userName;
     this.age = age;
     this.gender = gender;
     this.hobby = hobby;
+    this.weather = weather;
 }
 @Generated(hash = 586692638)
 public User() {
 }
-public Long getId() {
-    return this.id;
-}
-public void setId(Long id) {
-    this.id = id;
-}
-public int getUserId() {
+public Long getUserId() {
     return this.userId;
 }
-public void setUserId(int userId) {
+public void setUserId(Long userId) {
     this.userId = userId;
 }
 public String getUserName() {
@@ -81,6 +76,18 @@ public String getHobby() {
 }
 public void setHobby(String hobby) {
     this.hobby = hobby;
+}
+public Long getId() {
+    return this.id;
+}
+public void setId(Long id) {
+    this.id = id;
+}
+public String getWeather() {
+    return this.weather;
+}
+public void setWeather(String weather) {
+    this.weather = weather;
 }
 
 
