@@ -1,9 +1,9 @@
-package demo.greendao.com.myapplication.dbCore.manager;
+package demo.greendao.com.greendaolibrary;
 
 import android.content.Context;
 
-import demo.greendao.com.myapplication.dbCore.BaseDao;
-import demo.greendao.com.myapplication.modle.User;
+import demo.greendao.com.greendaolibrary.baseDataModle.User;
+
 
 /**
  * Created by zhoujiaqi on 2018/2/5.

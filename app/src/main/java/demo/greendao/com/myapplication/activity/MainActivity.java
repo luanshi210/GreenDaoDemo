@@ -5,9 +5,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import demo.greendao.com.greendaolibrary.DaoCore;
+import demo.greendao.com.greendaolibrary.baseDataModle.User;
 import demo.greendao.com.myapplication.R;
-import demo.greendao.com.myapplication.dbCore.DaoCore;
-import demo.greendao.com.myapplication.modle.User;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 

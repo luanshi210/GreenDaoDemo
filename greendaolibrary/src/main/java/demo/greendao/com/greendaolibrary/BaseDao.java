@@ -1,4 +1,4 @@
-package demo.greendao.com.myapplication.dbCore;
+package demo.greendao.com.greendaolibrary;
 
 /**
  * Created by zhoujiaqi on 2018/2/5.

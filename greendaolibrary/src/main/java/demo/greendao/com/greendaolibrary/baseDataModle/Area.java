@@ -1,4 +1,4 @@
-package demo.greendao.com.myapplication.modle;
+package demo.greendao.com.greendaolibrary.baseDataModle;
 
 import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Generated;

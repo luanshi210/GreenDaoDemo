@@ -1,4 +1,4 @@
-package demo.greendao.com.myapplication.dbCore;
+package demo.greendao.com.greendaolibrary;
 
 import android.database.Cursor;
 import android.database.SQLException;
