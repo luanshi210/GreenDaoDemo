@@ -1,4 +1,4 @@
-package demo.greendao.com.greendaolibrary.model;
+package demo.greendao.com.greendaolibrary.entity;
 
 import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Generated;

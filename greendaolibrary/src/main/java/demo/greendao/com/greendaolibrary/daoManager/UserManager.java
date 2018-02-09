@@ -1,7 +1,7 @@
 package demo.greendao.com.greendaolibrary.daoManager;
 
 import android.content.Context;
-import demo.greendao.com.greendaolibrary.model.User;
+import demo.greendao.com.greendaolibrary.entity.User;
 import demo.greendao.com.greendaolibrary.core.BaseDao;
 
 

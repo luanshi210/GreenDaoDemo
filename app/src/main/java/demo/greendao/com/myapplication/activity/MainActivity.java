@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Button;
 
 import demo.greendao.com.greendaolibrary.core.DaoCore;
-import demo.greendao.com.greendaolibrary.model.User;
+import demo.greendao.com.greendaolibrary.entity.User;
 import demo.greendao.com.myapplication.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
