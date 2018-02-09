@@ -4,7 +4,7 @@ import android.app.Application;
 import android.content.Context;
 
 import cube.com.axislibrary.factory.Axis;
-import demo.greendao.com.greendaolibrary.DaoCore;
+import demo.greendao.com.greendaolibrary.core.DaoCore;
 
 /**
  * Created by zhoujiaqi on 2018/2/5.

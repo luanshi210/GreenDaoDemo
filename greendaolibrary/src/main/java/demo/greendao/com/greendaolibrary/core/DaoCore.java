@@ -1,6 +1,8 @@
-package demo.greendao.com.greendaolibrary;
+package demo.greendao.com.greendaolibrary.core;
 
 import android.content.Context;
+
+import demo.greendao.com.greendaolibrary.daoManager.UserManager;
 
 
 /**

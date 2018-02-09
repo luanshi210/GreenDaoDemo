@@ -1,8 +1,8 @@
-package demo.greendao.com.greendaolibrary;
+package demo.greendao.com.greendaolibrary.daoManager;
 
 import android.content.Context;
-
-import demo.greendao.com.greendaolibrary.baseDataModle.User;
+import demo.greendao.com.greendaolibrary.model.User;
+import demo.greendao.com.greendaolibrary.core.BaseDao;
 
 
 /**
@@ -14,6 +14,7 @@ public class UserManager extends BaseDao<User> {
     public UserManager(Context context) {
         super(context);
     }
+
 
 
 

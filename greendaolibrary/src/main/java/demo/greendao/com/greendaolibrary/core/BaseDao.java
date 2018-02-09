@@ -1,4 +1,4 @@
-package demo.greendao.com.greendaolibrary;
+package demo.greendao.com.greendaolibrary.core;
 
 /**
  * Created by zhoujiaqi on 2018/2/5.

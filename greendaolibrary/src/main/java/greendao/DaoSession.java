@@ -8,8 +8,8 @@ import org.greenrobot.greendao.database.Database;
 import org.greenrobot.greendao.identityscope.IdentityScopeType;
 import org.greenrobot.greendao.internal.DaoConfig;
 
-import demo.greendao.com.greendaolibrary.baseDataModle.Area;
-import demo.greendao.com.greendaolibrary.baseDataModle.User;
+import demo.greendao.com.greendaolibrary.model.Area;
+import demo.greendao.com.greendaolibrary.model.User;
 
 import greendao.AreaDao;
 import greendao.UserDao;
